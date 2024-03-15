@@ -1,0 +1,36 @@
+.right {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  height: 100%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  place-content: center;
+}
+
+.center {
+  display: grid;
+  place-content: center;
+}
+
+.less-margin {
+  margin: 0px;
+}
+
+.right-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1600px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}

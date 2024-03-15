@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  display: grid;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
